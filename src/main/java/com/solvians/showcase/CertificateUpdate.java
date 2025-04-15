@@ -103,11 +103,11 @@ public class CertificateUpdate {
         return Math.round(value * Math.pow(10, places)) / Math.pow(10, places);
     }
     
-	@Override
-	public String toString() {
-		return "CertificateUpdate [timestamp=" + timestamp + ", ISIN=" + ISIN + ", bidPrice=" + bidPrice + ", bidSize="
-				+ bidSize + ", askPrice=" + askPrice + ", askSize=" + askSize + ", maturityDate=" + maturityDate + "]";
-	}
     
+	 @Override
+	    public String toString() {
+	        return String.format("%d,%s,%.2f,%d,%.2f,%d,%s",
+	                timestamp, ISIN, bidPrice, bidSize, askPrice, askSize, maturityDate);
+	    }
     
 }
