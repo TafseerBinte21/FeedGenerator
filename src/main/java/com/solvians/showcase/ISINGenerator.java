@@ -8,7 +8,7 @@ public class ISINGenerator {
 	private static final Random random = ThreadLocalRandom.current();
 	
 	private static final String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	public String generateISIN() { 
+	public static String generateISIN() { 
 		
         String firstTwoUppercaseLetter = generateRandomCharacters();  
         String alphanumericCharac = randomAlphanumericCharacters();  
